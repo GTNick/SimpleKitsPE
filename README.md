@@ -19,9 +19,15 @@ Usage:
 Permissions:
 
 skpe.diamond
+
 skpe.iron
+
 skpe.golden
+
 skpe.chain
+
 skpe.leather
+
 skpe.food
+
 skpe.bow
