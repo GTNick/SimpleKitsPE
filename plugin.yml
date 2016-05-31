@@ -6,6 +6,10 @@ load: POSTWORLD
 author: paetti
 description: Kits Plugin by paetti.
 commands:
+ kitlist:
+  description: List available Kits
+  usage: "/kitlist"
+  permission: skpe.kitlist
  diamondkit:
   description: Get a Diamond Kit
   usage: "/diamondkit"
@@ -35,6 +39,8 @@ commands:
   usage: "/bowkit"
   permission: skpe.bow
 permissions:
+ skpe.kitlist:
+  default: true
  skpe.diamond:
   default: op
  skpe.iron:
