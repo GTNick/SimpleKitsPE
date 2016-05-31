@@ -35,9 +35,10 @@ class Main extends PluginBase implements Listener{
         switch($command->getName()){
 
             case "kitlist":
-               
+
             $sender->sendMessage(TextFormat::GREEN . "Avaible Kit Commands:");
-       
+            $sender->sendMessage(TextFormat::GREEN . "/diamondkit   /ironkit   /goldenkit   /chainkit   /leatherkit   /foodkit   /bowkit");
+            
             return true;
             
             case "diamondkit":
