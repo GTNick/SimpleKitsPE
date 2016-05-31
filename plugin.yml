@@ -1,174 +1,51 @@
-name: ChatToolsPro
-main: ChatToolsPro\Main
+name: SimpleKitsPE
+main: SimpleKitsPE\Main
 version: 1.0
 api: [1.0.0]
 load: POSTWORLD
 author: paetti
-description: Chat Tools by paetti.
+description: Kits Plugin by paetti.
 commands:
- chattoolspro:
-  description: Â§aChatToolsPro Help
-  usage: "/ctp <1/2/3/4>."
-  aliases: [ctp]
-  permission: chattoolspro.ctp
- checkop:
-  description: Â§aCheck if a Player is OP or not.
-  usage: "/checkop <Player>."
-  permission: chattoolspro.checkop
- helpme:
-  description: Â§aAdds [NeedsHelp] Tag to a Name
-  usage: "/helpme."
-  permission: chattoolspro.helpme
- support:
-  description: Â§aBroadcasts a Message as [Support]
-  usage: "/support <Message>."
-  aliases: [supportsay, saysupport]
-  permission: chattoolspro.supportsay
- warning:
-  description: Â§aBroadcasts a Message as [Warning]
-  usage: "/warning <Message>."
-  aliases: [warnsay]
-  permission: chattoolspro.warning
- announcement:
-  description: Â§aBroadcasts a Message as [Announcement]
-  usage: "/announcement."
-  aliases: [sayannounce]
-  permission: chattoolspro.announcement
- alert:
-  description: Â§aBroadcasts a Message as [ALERT]
-  usage: "/alert <Message>."
-  aliases: [alertsay]
-  permission: chattoolspro.alert
- info:
-  description: Â§aBroadcasts a Message as [Info]
-  usage: "/info <Message>."
-  aliases: [infosay]
-  permission: chattoolspro.info
- done:
-  description: Â§aRemoves [NeedsHelp] Tag from a Name
-  aliases: [donehelp]
-  usage: "/helpdone."
-  permission: chattoolspro.done
- serversay:
-  description: Â§aBroadcasts a Message as [Server]
-  usage: "/serversay."
-  aliases: [sayserver]
-  permission: chattoolspro.serversay
- staffsay:
-  description: Â§aBroadcasts a Message as [Staff]
-  usage: "/staffsay."
-  aliases: [saystaff]
-  permission: chattoolspro.staffsay
- warn:
-  description: Â§cWarns a Player
-  usage: "/warn <Player> <Reason>."
-  permission: chattoolspro.warn
- vmsg:
-  description: Â§aSends an anonymous Message to a Player without the Sender Name
-  usage: "/vmsg <Player> <Message>."
-  permission: chattoolspro.vmsg
- chatsay:
-  description: Â§aBroadcast a Message without any Tag
-  usage: "/chatsay <Message>."
-  permission: chattoolspro.chatsay
- tipgive:
-  description: Â§a Give an Player a Tip
-  usage: "/tipgive <Player> <Tip>."
-  permission: chattoolspro.tipgive
- setnick:
-  description: Â§aSets an Nick
-  usage: "/setnick <Nick>."
-  permission: chattoolspro.setnick
- spam:
-  description: Â§aSpam
-  usage: "/spam."
-  permission: chattoolspro.spam
- sayas:
-  description: Â§aSend a Message as another Player
-  usage: "/sayas <Player> <Message>."
-  permission: chattoolspro.sayas
- spammsg:
-  description: Â§aSend a Message to another Player more times at once
-  usage: "/spammsg <Player> <Message>."
-  permission: chattoolspro.spammsg
- spamsay:
-  description: Â§aSpams a Message into the chat
-  usage: "/spamsay <Message>."
-  permission: chattoolspro.spamsay
- clearchat:
-  description: Â§aClears the Chat.
-  usage: "/clearchat."
-  permission: chattoolspro.clearchat
- hug:
-  description: Â§aHug a Player.
-  usage: "/hug <Player>."
-  permission: chattoolspro.hug
- opfake:
-  description: Â§aFake op a Player.
-  usage: "/opfake <Player>."
-  permission: chattoolspro.opfake
- deopfake:
-  description: Â§aFake Deop a Player.
-  usage: "/deopfake <Player>."
-  permission: chattoolspro.deopfake
- report:
-  description: Â§aReport a Player
-  usage: "/report <Player> <Reason>."
-  permission: chattoolspro.report
- ops:
-  description: Â§aSee online OP's
-  usage: "/ops"
-  permission: chattoolspro.ops
+ diamondkit:
+  description: Get a Diamond Kit
+  usage: "/diamondkit"
+  permission: skpe.diamond
+ ironkit:
+  description: Get a Iron Kit
+  usage: "/ironkit"
+  permission: skpe.iron
+ goldenkit:
+  description: Get a Golden Kit
+  usage: "/goldenkit"
+  permission: skpe.golden
+ chainkit:
+  description: Get a Chain Kit
+  usage: "/chainkit"
+  permission: skpe.chain
+ leatherkit:
+  description: Get a Leather Kit
+  usage: "/leatherkit"
+  permission: skpe.leather
+ foodkit:
+  description: Get a Food Kit
+  usage: "/foodkit"
+  permission: skpe.food
+ bowkit:
+  description: Get a Bow Kit
+  usage: "/bowkit"
+  permission: skpe.bow
 permissions:
- chattoolspro.ctp:
+ skpe.diamond:
+  default: op
+ skpe.iron:
+  default: op
+ skpe.golden:
+  default: op
+ skpe.chain:
+  default: op
+ skpe.leather:
   default: true
- chattoolspro.helpme:
-  default: true
- chattoolspro.done:
-  default: true
- chattoolspro.announcement:
+ skpe.food:
   default: op
- chattoolspro.serversay:
-  default: op
- chattoolspro.staffsay:
-  default: op
- chattoolspro.support:
-  default: op
- chattoolspro.warning:
-  default: op
- chattoolspro.warn:
-  default: op
- chattoolspro.vmsg:
-  default: op
- chattoolspro.chatsay:
-  default: op
- chattoolspro.alert:
-  default: op
- chattoolspro.info:
-  default: op
- chattoolspro.tipgive:
-  default: true
- chattoolspro.setnick:
-  default: op
- chattoolspro.sayas:
-  default: op
- chattoolspro.report:
-  default: true
- chattoolspro.ops:
-  default: true
- chattoolspro.spam:
-  default: op
- chattoolspro.clearchat:
-  default: op
- chattoolspro.hug:
-  default: true
- chattoolspro.spammsg:
-  default: op
- chattoolspro.spamsay:
-  default: op
- chattoolspro.opfake:
-  default: op
- chattoolspro.deopfake:
-  default: op
- chattoolspro.checkop:
+ skpe.bow:
   default: op
